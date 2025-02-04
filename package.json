@@ -33,7 +33,8 @@
     "test:detox:ios:bundle:release": "mkdir -p .tmp && react-native bundle --max-workers 4 --platform ios --dev false --entry-file example/index.js --bundle-output .tmp/ios-bundle.js",
     "test:detox:clean": "rimraf example/android/build && rimraf example/android/app/build && rimraf example/android/.gradle && rimraf example/ios/build",
     "ci:publish": "yarn semantic-release",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "windows": "react-native run-windows"
   },
   "keywords": [
     "react-native",
@@ -71,16 +72,17 @@
     "prettier": "^2.2.1",
     "pretty-quick": "^2.0.1",
     "react": "17.0.2",
-    "react-native": "0.68.1",
+    "react-native": "0.73.11",
     "react-dom": "17.0.2",
     "react-native-builder-bob": "^0.18.1",
     "react-native-macos": "0.61.63",
     "react-native-web": "^0.14.10",
-    "react-native-windows": "^0.64.14",
+    "react-native-windows": "^0.73.22",
     "react-test-renderer": "17.0.2",
     "rimraf": "^2.6.3",
     "semantic-release": "^19.0.3",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "metro-config": "^0.80.12"
   },
   "resolutions": {
     "metro-react-native-babel-preset": "^0.67.0",
